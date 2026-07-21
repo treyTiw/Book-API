@@ -6,7 +6,7 @@ const bookModel = new Schema(
   {
     title: { type: String },
     author: { type: String },
-    genre: { type: String },
+    genre: { type: String, maxlength: 30 }, // Added maxlength: 30 as per requirements
     read: { type: Boolean, default: false }
   }
 );
